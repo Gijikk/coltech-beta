@@ -1,12 +1,31 @@
-@media screen and (min-width: 1940px) {
-  .study .triangle__list li #text1 {
-    left: 5%;
+//@media screen and (max-width: 2560px) and (min-width: 1921px) {
+//  .first__title {
+//    margin-left: -167px;
+//  }
+//  .second__title {
+//    margin-left: -690px;
+//  }
+//  .third__title {
+//    margin-left: -2344px;
+//  }
+//}
+@media screen and (min-width: 993px) {
+  .study .triangle__wrap img {
+    &:first-child {
+      margin-top: -30px;
+    }
+    &:last-child {
+      margin-top: -30px;
+    }
+
   }
-  .study .triangle__list li #text2 {
-    left: 26%;
+}
+@media screen and (min-width: 1920px) {
+  .study .triangle__title {
+    font-size: 63px;
   }
-  .study .triangle__list li #text5 {
-    left: 84%;
+  .third .third__title {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 1940px) {
@@ -21,14 +40,6 @@
   }
   .second__button {
     right: 50px;
-  }
-  .study .triangles__img img {
-    top: 290px;
-  }
-}
-@media screen and (max-width: 1920px) {
-  .job .cards__item {
-    margin-right: 40px;
   }
 }
 @media screen and (max-width: 1830px) {
@@ -51,24 +62,24 @@
   }
 }
 @media screen and (max-width: 1800px) {
-  .work .triangles__title {
-    font-size: 140px;
+  .work {
+    .triangles__title {
+      font-size: 140px;
+    }
   }
-  .studies .triangles__title {
-    font-size: 140px;
+  .studies {
+    .triangles__title {
+      font-size: 140px;
+    }
   }
   .vacancies .triangles__title {
     font-size: 140px;
   }
-  //.job .cards__wrapper {
-  //  display: flex;
-  //  flex-wrap: wrap;
-  //}
-  //
-  //.job .cards__item {
-  //  margin-right: 65px;
-  //  margin-bottom: 65px;
-  //}
+  .job .cards__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
 @media screen and (max-width: 1750px) {
   .vacancies .work__wrapper {
@@ -81,7 +92,14 @@
     font-size: 40px;
   }
   .values .subheader__title {
+    font-size: 100px;
+  }
+  .values .block__title {
     font-size: 200px;
+  }
+
+  .message__title {
+    font-size: 120px;
   }
 }
 @media screen and (max-width: 1675px) {
@@ -104,6 +122,15 @@
   }
   .solutions .subheader__title {
     font-size: 200px;
+  }
+  .great .subheader__title {
+    font-size: 200px;
+  }
+  .great .last__title {
+    font-size: 200px;
+    .color-blue {
+      margin-right: 0;
+    }
   }
   .vacancies .subheader__title {
     font-size: 200px;
@@ -162,20 +189,19 @@
   }
 
     .first__button {
-      left: 1200px;
-      /* right: 0px; */
-      top: -420px;
-      height: 400px;
       a {
         width: 217px;
         height: 280px;
+      }
+      &_2{
+        //left: 30px !important;
       }
     }
 
   .first__title {
     font-size: 200px;
     /*margin-left: -135px;*/
-    margin-left: -560px;
+    //margin-left: -560px;
   }
   .first__subtitle {
     &:first-child{
@@ -183,14 +209,12 @@
     }
   }
   .second__button {
-    left: 39px;
-    top: -455px;
-    height: 400px;
+    top: 360px;
   }
   .second__title {
     font-size: 200px;
     /*margin-left: -735px;*/
-    margin-left: -1300px;
+    //margin-left: -1300px;
   }
   .second__subtitle {
     &:first-child{
@@ -198,9 +222,9 @@
     }
   }
   .third__title {
-    font-size: 200px;
+    font-size: 190px;
     /*margin-left: -1315px;*/
-    margin-left: -2700px;
+    //margin-left: -2700px;
     .color-blue {
       margin-right: 280px;
     }
@@ -212,7 +236,7 @@
   .last__title {
     font-size: 200px;
     /*margin-left: -945px;*/
-    margin-left: -1150px;
+    //margin-left: -1150px;
     .color-blue {
       margin-right: -1390px;
     }
@@ -244,7 +268,6 @@
       &__list {
         top: 0;
         li {
-          text-align: left;
         }
       }
     }
@@ -263,33 +286,44 @@
     padding-bottom: 50px;
   }
 }
+@media screen and (max-width: 1600px) {
+  .margin-first {
+    margin-left: 1135px;
+  }
+  .margin-second {
+    margin-left: 1525px;
+  }
+  .margin-third {
+    margin-left: 3010px;
+  }
+  .margin-last {
+    margin-left: -345px;
+  }
+}
 @media screen and (max-width: 1545px) {
   .studies .subheader__list {
     position: absolute;
     right: 50px;
   }
-  .first__button {
-    left: 1000px;
-  }
+  //.first__button {
+  //  left: 1000px;
+  //}
   .solutions .video__title {
     font-size: 35px;
   }
   .work .triangles__img img {
-    top: 390px;
+    top: 535px;
   }
 
-  .studies .subheader__list {
-    li {
-      text-align: left;
-    }
-  }
+  //.studies .subheader__list {
+  //  li {
+  //    text-align: left;
+  //  }
+  //}
   .work .subheader__smalltitle {
     br {
       display: none ;
     }
-  }
-  .studies .triangles__img img {
-    top: 285px;
   }
   .study .subheader__logo {
     margin-bottom: 70px;
@@ -297,7 +331,7 @@
   .study {
     .subheader__list {
       li {
-        text-align: left;
+
       }
     }
   }
@@ -308,9 +342,20 @@
   }
 }
 @media screen and (max-width: 1410px) {
-  .job .subtitles__description {
+  .job{
+    .subtitles{
+      &__description {
+        max-width: inherit;
+      }
+      &__wrapper{
+        &>*{
+          &:not(:last-child){
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
 
-    max-width: inherit;
   }
   .blog .recent__maintext {
     font-size: 105px;
@@ -358,6 +403,10 @@
   }
   .job .subtitles__wrapper {
     flex-direction: column;
+    &>*{
+      width: 100%;
+      margin: 0;
+    }
   }
   .job .cards__main {
     font-size: 126px;
@@ -376,8 +425,13 @@
     margin-bottom: 60px;
     font-size: 105px;
   }
+
+  .message__title {
+    font-size: 100px;
+  }
 }
 @media screen and (max-width: 1360px) {
+
   .contact .officies__maintext {
     font-size: 150px;
   }
@@ -395,6 +449,15 @@
     font-size: 150px;
   }
   .solutions .subheader__title {
+    font-size: 150px;
+  }
+  .values .block__title {
+    font-size: 150px;
+  }
+  .great .subheader__title {
+    font-size: 150px;
+  }
+  .great .last__title {
     font-size: 150px;
   }
   .vacancies .subheader__title {
@@ -423,23 +486,23 @@
   .first__title {
     font-size: 150px;
     line-height: 140px;
-    height: 394px;
-    /*margin-left: -100px;*/
-    margin-left: -560px;
+    //height: 394px;
+    ///*margin-left: -100px;*/
+    //margin-left: -560px;
   }
   .second__title {
     font-size: 150px;
     line-height: 140px;
-    height: 394px;
-    /*margin-left: -950px;*/
-    margin-left: -1250px;
+    //height: 394px;
+    ///*margin-left: -950px;*/
+    //margin-left: -1250px;
   }
   .third__title {
-    font-size: 150px;
+    font-size: 143px;
     line-height: 140px;
-    height: 394px;
-    /*margin-left: -1590px;*/
-    margin-left: -2950px;
+    //height: 394px;
+    ///*margin-left: -1590px;*/
+    //margin-left: -2950px;
     .color-blue {
       margin-right: 210px;
     }
@@ -447,9 +510,9 @@
   .last__title {
     font-size: 150px;
     line-height: 140px;
-    height: 394px;
-    /*margin-left: -1108px;*/
-    margin-left: -1300px;
+    //height: 394px;
+    ///*margin-left: -1108px;*/
+    //margin-left: -1300px;
     .color-blue {
       margin-right: -1045px;
     }
@@ -459,19 +522,20 @@
     line-height: 110px;
   }
   .first__button {
-    left: 1000px;
+    /* left: 1000px; */
     /* right: 0px; */
-    top: -350px;
-    height: 400px;
+    top: 90px;
+    /* height: 400px; */
     a {
       width: 217px;
       height: 280px;
     }
   }
   .second__button {
-    left: 25px;
-    top: -375px;
-    height: 400px;
+
+      top: 145px;
+      right: 0;
+
     a {
       width: 217px;
       height: 280px;
@@ -512,6 +576,31 @@
   .values .slick-dots {
     top: -20px;
   }
+
+  .info-flex {
+    .from-client {
+      width: 100%;
+    }
+
+    .fc-list {
+      width: 100%;
+    }
+
+  }
+}
+@media screen and (max-width: 1366px) {
+  .margin-first {
+    margin-left: 1135px;
+  }
+  .margin-second {
+    margin-left: 1090px;
+  }
+  .margin-third {
+    margin-left: 2535px;
+  }
+  .margin-last {
+    margin-left: -600px;
+  }
 }
 @media screen and (max-width: 1315px) {
   .solutions .video__title {
@@ -524,8 +613,10 @@
     margin: 0 auto;
   }
   .study .subheader__title {
-    max-width: 500px;
-  }
+    overflow: unset;
+  }.study .subheader__wrapper {
+     flex-direction: column;
+   }
   .blog .recent__button {
     position: absolute;
     top: 299px;
@@ -539,6 +630,19 @@
   }
   .blog .recent__wrapper {
     flex-direction: column;
+    margin: 0 ;
+    &>*{
+      width: 100%;
+      margin: 0 0 80px 0;
+    }
+  }
+  .footer .footer__city {
+    font: normal normal bold 30px/45px Kanit;
+  }
+  .footer .footer__tel {
+      font: normal normal bold 30px/45px Kanit;
+
+
   }
   .blog .recent__img img {
     margin-bottom: 40px;
@@ -553,11 +657,16 @@
     margin-right: 0;
   }
 }
-
+@media screen and (max-width: 1280px) and (min-width: 993px) {
+  .blog .recent__wrapper:first-child {
+  margin: 0 0 225px 0;
+  }
+}
 @media screen and (max-width: 1285px) {
 
   .first__button {
-    left: 750px;
+    //left: 750px;
+    right: 0;
   }
   .studies .subheader__title {
     font-size: 200px;
@@ -567,15 +676,15 @@
   }
 }
 @media screen and (max-width: 1260px) {
-  .study .triangle__list li #text1 {
-    left: 8%;
-  }
-  .study .triangle__list li #text5 {
-    left: 81%;
-  }
-  .study .triangle__list li #text4 {
-    left: 64%;
-  }
+  //.study .triangle__list li #text1 {
+  //  left: 8%;
+  //}
+  //.study .triangle__list li #text5 {
+  //  left: 81%;
+  //}
+  //.study .triangle__list li #text4 {
+  //  left: 64%;
+  //}
   .contact .footer__adress {
     display: block;
   }
@@ -618,62 +727,6 @@
   }
 
 }
-@media screen and (max-width: 1170px) {
-  .contact .officies__wrap {
-    flex-direction: column;
-
-  }
-  .contact .officies__item {
-    margin-right: 0;
-  }
-  .work .subheader__title {
-    font-size: 200px;
-  }
-  .work .triangles__title {
-    font-size: 100px;
-  }
-  .work .triangles__img img {
-    top: 320px;
-  }
-  .studies .triangles__title {
-    font-size: 100px;
-  }
-  .study .triangles__title {
-    font-size: 100px;
-  }
-
-  .study .triangles__img img {
-    top: 245px;
-  }
-  .studies .triangles__img img {
-    top: 240px;
-  }
-  .study .triangles__list li #text1 {
-    left: 8%;
-  }
-  .study .triangles__list li #text2 {
-    left: 28%;
-  }
-  .study .triangles__list li #text4 {
-    left: 64%;
-  }
-  .study .triangles__list li #text5 {
-    left: 81%;
-  }
-  .study .triangles__list li #sub1 {
-    left: 5%;
-  }
-  .study .triangles__list li #sub2 {
-    left: 25%;
-  }
-  .study .triangles__list li #sub4 {
-    left: 61%;
-  }
-  .study .triangles__list li #sub5 {
-    left: 78%;
-  }
-}
-
 @media screen and (max-width: 1130px) {
   .studies .subheader__list {
     position: relative;
@@ -691,8 +744,22 @@
   .solutions .video__title {
     font-size: 25px;
   }
-  .job .cards__item {
-
+  .work .triangles__img img {
+    top: 700px;
+  }
+  .firms{
+    &__wrapper{
+      img {
+        padding: 0 50px;
+      }
+    }
+  }
+  .contact .officies__wrap {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact .officies__item {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -700,6 +767,9 @@
   .contact .officies__maintext {
     font-size: 100px;
     margin-bottom: 40px;
+  }
+  .message__title {
+    font-size: 70px;
   }
   .about .image {
     margin-bottom: 50px;
@@ -709,16 +779,28 @@
   }
   .first__title {
     font-size: 100px;
-    line-height: 71px;
-    height: 334px;
-    /*margin-left: -68px;*/
-    margin-left: -400px;
+    line-height: 90px;
+    //height: 334px;
+    ///*margin-left: -68px;*/
+    //margin-left: -400px;
   }
   .about .subheader__title {
     font-size: 100px;
     margin-bottom: 40px;
   }
   .solutions .subheader__title {
+    font-size: 100px;
+    margin-bottom: 40px;
+  }
+  .values .block__title {
+    font-size: 150px;
+    margin-bottom: 40px;
+  }
+  .great .subheader__title {
+    font-size: 100px;
+    margin-bottom: 40px;
+  }
+  .great .last__title {
     font-size: 100px;
     margin-bottom: 40px;
   }
@@ -750,9 +832,8 @@
   .first__button {
     //top: -599px;
     width: 250px;
-    left: 530px;
-    height: 400px;
-    top: -350px;
+    //left: 490px;
+    top: 0;
     a {
       width: 217px;
       height: 280px;
@@ -760,33 +841,33 @@
   }
   .second__title {
     font-size: 100px;
-    line-height: 110px;
-    height: 334px;
-    /*margin-left: -1165px;*/
-    margin-left: -1600px;
+    line-height: 90px
+    //height: 334px;
+    ///*margin-left: -1165px;*/
+    //margin-left: -1600px;
   }
   .second__button {
-    top: -355px;
+    top: 20px;
     width: 250px;
-    left: 10px;
-    height: 400px;
+    right: 0;
+
   }
   .third__title {
-    font-size: 100px;
-    line-height: 110px;
-    height: 334px;
-    /*margin-left: -1865px;*/
-    margin-left: -2750px;
+    font-size: 96px;
+    line-height: 90px;
+    //height: 334px;
+    ///*margin-left: -1865px;*/
+    //margin-left: -2750px;
     .color-blue {
       margin-right: 140px;
     }
   }
   .last__title {
     font-size: 100px;
-    line-height: 110px;
-    height: 334px;
-    /*margin-left: -1272px;*/
-    margin-left: -1600px;
+    line-height: 90px;
+    //height: 334px;
+    ///*margin-left: -1272px;*/
+    //margin-left: -1600px;
     .color-blue {
       margin-right: -700px;
     }
@@ -845,12 +926,102 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .job .subtitles__wrap {
-
-    flex-direction: column;
+  .job{
+    .subheader{
+      margin-bottom: -180px;
+      &__vacancy{
+        font-size: 30px;
+        line-height: .9;
+      }
+    }
+    .subtitles{
+      &__descr{
+        font-size: 30px;
+      }
+      &__wrap{
+        flex-direction: column;
+      }
+      &__info{
+        flex-flow: row wrap;
+        margin: 0 0 -20px -20px;
+        &>*{
+          margin: 0 0 20px 20px;
+        }
+      }
+      &__title{
+        font-size: 30px;
+      }
+      &__description{
+        font-size: 18px;
+      }
+      &__wrapper{
+        &>*{
+          &:not(:last-child){
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .cards{
+      &__item{
+        padding:15px;
+      }
+      &__wrapper{
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 0 0 -50px -50px;
+        &>*{
+          width: calc(50% - 50px);
+          margin: 0 0 50px 50px;
+        }
+      }
+      &__title{
+        font-size: 30px;
+      }
+      &__subtitle{
+        font-size: 18px;
+      }
+    }
   }
-  .job .cards__item {
-    margin: auto;
+  .solutions .video__img {
+    left: -25px;
+    top: -65px;
+  }
+  .great .map__text {
+    font: normal normal 900 30px/normal Kanit;
+  }
+  .great .last__text {
+    font: normal normal 900 30px/normal Kanit;
+  }
+  .values .block__text {
+    font: normal normal 900 30px/normal Kanit;
+  }
+  .values .subheader__text {
+    font: normal normal bold 30px/normal Kanit;
+  }
+  .study .triangle__wrap {
+    align-items: center;
+  }
+  .study .triangle__title {
+    top: inherit;
+  }
+  .study .triangle__subtitle {
+    top: inherit;
+  }
+  #sub1 {
+    transform: translateY(65px);
+  }
+  #sub2 {
+    transform: translateY(35px);
+  }
+  #sub3 {
+    transform: translateY(55px);
+  }
+  #sub4 {
+    transform: translateY(40px);
+  }
+  #sub5 {
+    transform: translateY(75px);
   }
   .blogs .media__item {
     flex-direction: column;
@@ -949,9 +1120,6 @@
       margin-bottom: 40px;
       margin-top: 40px;
     }
-    .video__img {
-      top: -88px;
-    }
     .video__wrapper {
       flex-direction: column;
     }
@@ -1006,9 +1174,6 @@
     font-size: 75px;
     margin-bottom: 130px;
   }
-  .job .triangles__img img {
-    top: 75px;
-  }
   .vacancies .work {
     margin-bottom: 100px;
   }
@@ -1022,12 +1187,20 @@
     font-size: 107px;
 
   }
+  .header__list {
+    li {
+      padding-right: 15px;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+    }
+  }
   .study .triangle__list {
     width: fit-content;
     margin: 0 auto;
     flex-direction: column;
     .triangle__title {
-      font-size: 250%;
+      font-size: 180%;
     }
     .triangle__subtitle {
       font-size: 100%;
@@ -1038,45 +1211,45 @@
       }
     }
   }
-  .study .triangle__list li #text1 {
-    left: 43%;
-    top: 90px;
-  }
-  .study .triangle__list li #text2 {
-    left: 44%;
-  }
-  .study .triangle__list li #text3 {
-    left: 47%;
-    top: 573px;
-  }
-  .study .triangle__list li #text4 {
-    left: 44%;
-    top: 800px;
-  }
-  .study .triangle__list li #text5 {
-    left: 43%;
-    top: 1072px;
-  }
-  .study .triangle__list li #sub1 {
-    left: 38%;
-    top: 172px
-  }
-  .study .triangle__list li #sub2 {
-    left: 39%;
-    top: 392px;
-  }
-  .study .triangle__list li #sub3 {
-    left: 39%;
-    top: 660px;
-  }
-  .study .triangle__list li #sub4 {
-    left: 39%;
-    top: 882px;
-  }
-  .study .triangle__list li #sub5 {
-    left: 38%;
-    top: 1162px;
-  }
+  //.study .triangle__list li #text1 {
+  //  left: 43%;
+  //  top: 90px;
+  //}
+  //.study .triangle__list li #text2 {
+  //  left: 44%;
+  //}
+  //.study .triangle__list li #text3 {
+  //  left: 47%;
+  //  top: 573px;
+  //}
+  //.study .triangle__list li #text4 {
+  //  left: 44%;
+  //  top: 800px;
+  //}
+  //.study .triangle__list li #text5 {
+  //  left: 43%;
+  //  top: 1072px;
+  //}
+  //.study .triangle__list li #sub1 {
+  //  left: 38%;
+  //  top: 172px
+  //}
+  //.study .triangle__list li #sub2 {
+  //  left: 39%;
+  //  top: 392px;
+  //}
+  //.study .triangle__list li #sub3 {
+  //  left: 39%;
+  //  top: 660px;
+  //}
+  //.study .triangle__list li #sub4 {
+  //  left: 39%;
+  //  top: 882px;
+  //}
+  //.study .triangle__list li #sub5 {
+  //  left: 38%;
+  //  top: 1162px;
+  //}
   .vacancies .profession__city:nth-child(4) {
     margin-left: 0;
   }
@@ -1119,16 +1292,28 @@
 
     flex-direction: column;
   }
-}
-@media screen and (max-width: 951px) {
-  .work .triangles__img img {
-    top: 200px;
+  .vacancies .triangles__img img, .work .triangles__img img, .studies .triangles__img img {
+    top: 400px;
   }
-
-}
-@media screen and (max-width: 900px){
   .study .triangles__img img {
-    top: 320px;
+    top: 535px;
+  }
+  .modal {
+    padding: 40px 250px 40px 60px;
+
+    .close-button {
+      top: 25px;
+      right: 40px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 130%;
+    }
+
+    &__btn {
+      right: 10px;
+    }
   }
 }
 @media screen and (max-width: 833px) {
@@ -1206,10 +1391,60 @@
 
 
   }
+
 }
 @media screen and (max-width: 775px) {
   .job .triangles__title {
     font-size: 60px;
+  }
+  .firms{
+    &__wrapper{
+      img {
+        padding: 0 30px;
+      }
+    }
+  }
+  .header{
+   &_main{
+     .container{
+       min-height: 100vh;
+       display: flex;
+       flex-direction: column;
+       h1{
+         margin: auto;
+       }
+     }
+   }
+  }
+  .job{
+    .subtitles{
+      &__title{
+        font-size: 26px;
+      }
+      &__description{
+        font-size: 16px;
+      }
+    }
+    .cards{
+
+      &__wrapper{
+        margin: 0 0 -30px -30px;
+        &>*{
+          width: calc(50% - 30px);
+          margin: 0 0 30px 30px;
+        }
+      }
+      &__title{
+        font-size: 26px;
+      }
+      &__subtitle{
+        font-size: 16px;
+      }
+    }
+  }
+  .footer .footer__tel {
+      font: normal normal bold 20px/15px Kanit;
+
   }
 }
 @media screen and (max-width: 740px) {
@@ -1232,6 +1467,9 @@
   .contact .subheader__title {
     font-size: 70px;
     margin-bottom: 25px;
+  }
+  .message__title {
+    font-size: 50px;
   }
   .blog .poster__title {
     font-size: 58px;
@@ -1278,42 +1516,7 @@
   //  left: 13%;
   //
   //}
-  .study .triangle__list li #text1 {
 
-  }
-  .study .triangle__list li #text2 {
-
-  }
-  .study .triangle__list li #text3 {
-
-
-  }
-  .study .triangle__list li #text4 {
-
-
-  }
-  .study .triangle__list li #text5 {
-
-  }
-  .study .triangle__list li #sub1 {
-
-
-  }
-  .study .triangle__list li #sub2 {
-
-  }
-  .study .triangle__list li #sub3 {
-
-
-  }
-  .study .triangle__list li #sub4 {
-
-
-  }
-  .study .triangle__list li #sub5 {
-
-
-  }
   .vacancies .work__item {
     padding-bottom: 50px;
   }
@@ -1365,25 +1568,26 @@
     left: -220px;
   }
 
+
 }
 @media screen and (max-width: 740px) {
-  .study .triangle__list li #text1 {
-    left: 40%;
-  }
-  .study .triangle__list li #text2 {
-    left: 42%;
-  }
-  .study .triangle__list li #text3 {
-    left: 46%;
-
-  }
-  .study .triangle__list li #text4 {
-    left: 43%;
-
-  }
-  .study .triangle__list li #text5 {
-    left: 40%;
-  }
+  //.study .triangle__list li #text1 {
+  //  left: 40%;
+  //}
+  //.study .triangle__list li #text2 {
+  //  left: 42%;
+  //}
+  //.study .triangle__list li #text3 {
+  //  left: 46%;
+  //
+  //}
+  //.study .triangle__list li #text4 {
+  //  left: 43%;
+  //
+  //}
+  //.study .triangle__list li #text5 {
+  //  left: 40%;
+  //}
   .contact .subheader__adress {
     margin-bottom: 70px;
     font-size: 25px;
@@ -1420,8 +1624,10 @@
   .header__list {
     right: 0;
     li {
-      line-height: 1.3;
-      font-size: 12px;
+      padding-right: 9px;
+      font-size: 9px;
+      line-height: 16px;
+      text-align: center;
     }
   }
   .header__title {
@@ -1445,9 +1651,9 @@
   }
   .first__title {
     font-size: 70px;
-    line-height: 80px;
-    height: 390px;
-    margin-left: -48px;
+    line-height: 65px;
+    //height: 390px;
+    //margin-left: -48px;
   }
   .about .finish__string {
     font-size: 30px;
@@ -1458,6 +1664,18 @@
     margin-bottom: 25px;
   }
   .solutions .subheader__title {
+    font-size: 70px;
+    margin-bottom: 25px;
+  }
+  .values .block__title {
+    font-size: 70px;
+    margin-bottom: 25px;
+  }
+  .great .subheader__title {
+    font-size: 70px;
+    margin-bottom: 25px;
+  }
+  .great .last__title {
     font-size: 70px;
     margin-bottom: 25px;
   }
@@ -1475,6 +1693,9 @@
   .solutions .subheader__wrapper {
     flex-direction: column;
   }
+  .great .subheader__wrapper {
+    flex-direction: column;
+  }
   .about .finish__title {
     font-size: 60px;
     margin-bottom: 15px;
@@ -1489,9 +1710,11 @@
     width: 110%;
   }
   .first__button {
-    top: -325px;
-    left: 30px;
-    height: 400px;
+    left: 0;
+    position: relative;
+    svg {
+      height: 240px;
+    }
   }
   .first__wrapper {
     flex-direction: column;
@@ -1499,24 +1722,24 @@
 
   .second__title {
     font-size: 70px;
-    line-height: 80px;
-    height: 390px;
-    margin-left: -1295px;
+    line-height: 65px;
+    //height: 390px;
+    //margin-left: -1295px;
   }
   .second__button {
-    top: -325px;
-    left: 30px;
-    height: 400px;
-
+    position: relative;
+    svg {
+      height: 240px;
+    }
   }
   .second__wrapper {
     flex-direction: column;
   }
   .third__title {
     font-size: 70px;
-    line-height: 80px;
-    height: 225px;
-    margin-left: -2028px;
+    line-height: 65px;
+    //height: 225px;
+    //margin-left: -2028px;
     .color-blue {
       margin-right: 95px;
     }
@@ -1526,9 +1749,9 @@
   }
   .last__title {
     font-size: 70px;
-    line-height: 80px;
-    height: 225px;
-    margin-left: -1371px;
+    line-height: 65px;
+    //height: 225px;
+    //margin-left: -1371px;
     .color-blue {
       margin-right: -480px;
     }
@@ -1668,6 +1891,73 @@
   .job .cards__main {
     font-size: 58px;
   }
+  .modal {
+    padding: 20px;
+    max-height: 100vh;
+    height: 100%;
+    overflow-y: auto;
+
+    .close-button {
+      top: 5px;
+      right: 5px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__btn {
+      right: auto;
+      top: auto;
+      transform: translate(0, 0);
+      position: relative;
+      margin: 20px auto 0 auto;
+      display: block;
+    }
+  }
+
+  .modal::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: $main_black;
+  }
+
+  .modal::-webkit-scrollbar
+  {
+    width: 6px;
+    background-color: $main_black;
+  }
+
+  .modal::-webkit-scrollbar-thumb
+  {
+    background-color: $blue;
+  }
+
+  .case-text .mp-title {
+    font-size: 30px;
+  }
+
+  .info-flex {
+    .from-client {
+      .fc-title {
+        font-size: 30px;
+
+        span {
+          font-size: 60px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .info-flex .fc-list li {
+    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 670px) {
   //.study .triangle__list li #text1 {
@@ -1688,30 +1978,110 @@
 
 }
 @media screen and (max-width: 576px) {
-  .job .cards__info {
-    height: 376px;
+  .studies .subheader__subtitle {
+    font: normal normal 900 23px/normal Kanit;
+  }
+  .great .map {
+    margin-bottom: 60px;
+  }
+  .great .subheader__subtitle {
+    font: normal normal normal 16px/normal Mulish;
+  }
+  .great .map__text {
+    font: normal normal 900 20px/normal Kanit;
+  }
+  .great .last__text {
+    font: normal normal 900 20px/normal Kanit;
+  }
+  .values .block__text {
+    font: normal normal 900 20px/normal Kanit;
+  }
+  .values .subheader__text {
+    font: normal normal bold 20px/normal Kanit;
+  }
+  .job{
+    .subheader{
+      margin-bottom: -110px;
+    }
+    .cards{
+      &__wrapper{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 ;
+        &>*{
+          width: 100%;
+          margin: 0 ;
+          &:not(:last-child){
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+
+    }
+  }
+  .footer__gif {
+    margin: 0 auto;
+    display: block;
+    //margin-right: 183px;
+  }
+  .footer .footer__title {
+    display: none;
+  }
+  #title {
+    display: block;
+  }
+  .third .main-list {
+    display: none;
+  }
+  .first .first__button {
+    display: none;
+  }
+  .first .first__button2 {
+    display: block;
+  }
+  .second .second__button {
+    display: none;
+  }
+  .second .second__button2 {
+    display: block;
+  }
+
+  .subheader__slider {
+    margin-top: 40px;
   }
   a {
     text-decoration: none;
   }
-  #btn1 {
+  #btn {
+    display: block;
     text-decoration: none;
   }
   #btn2 {
     text-decoration: none;
+    display: block;
   }
   #btn3 {
+    display: block;
     text-decoration: none;
   }
   #btn4 {
+    display: block;
     text-decoration: none;
   }
   #btn5 {
+    display: block;
     text-decoration: none;
   }
   #btn6 {
+    display: block;
     text-decoration: none;
   }
+
+  a {
+    text-decoration: none;
+  }
+
   .work__dropdown.work__dropdown_active {
     margin-top: 55px;
   }
@@ -1742,6 +2112,9 @@
   .contact .officies__title {
     font-size: 40px;
     margin-bottom: 0;
+  }
+  .message__title {
+    font-size: 35px;
   }
   .contact .officies__subtitle {
     font-size: 16px;
@@ -1884,6 +2257,7 @@
     position: relative;
     width: 84px;
     height: 86px;
+    display: block;
   }
   #btn {
     top: 0;
@@ -1891,13 +2265,14 @@
     position: relative;
     width: 84px;
     height: 86px;
+    display: block;
   }
   .container {
     max-width: 540px;
     padding: 0 20px;
   }
   .firms {
-    margin-bottom: 55px;
+    margin-bottom: 30px;
   }
   .firms__wrapper {
     justify-content: flex-start;
@@ -1920,7 +2295,7 @@
     flex-wrap: wrap;
   }
   .footer__links {
-    margin-bottom: 65px;
+    margin-bottom: 10px;
     a {
       svg {
         width: 70%;
@@ -1969,10 +2344,10 @@
     }
   }
   .first__title {
+    margin-bottom: 0;
     font-size: 50px;
     line-height: 45px;
     max-width: 270px;
-    margin-left: 20px;
     height: 165px;
   }
   .about .subheader__title {
@@ -1980,6 +2355,18 @@
     margin-bottom: 20px;
   }
   .solutions .subheader__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .great .subheader__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .values .block__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .great .last__title {
     font-size: 50px;
     margin-bottom: 20px;
   }
@@ -2032,8 +2419,27 @@
     height: 165px;
     margin: 0;
     width: 320px;
-    margin-left: 20px;
 
+  }
+
+  .first__title .margin-first {
+    display: block;
+    margin: 0;
+  }
+
+  .second__title .margin-second {
+    display: block;
+    margin: 0;
+  }
+
+  .third__title .margin-third {
+    display: block;
+    margin: 0;
+  }
+
+  .last__title .margin-last {
+    display: block;
+    margin: 0;
   }
 
   .second__subtitle {
@@ -2049,11 +2455,10 @@
     line-height: 45px;
     font-size: 50px;
     line-height: 45px;
-    max-width: 320px;
+    max-width: 100%;
     margin: 0;
     height: 210px;
     text-align: left;
-    margin-left: 20px;
     .color-blue {
       margin-right: 70px;
     }
@@ -2072,7 +2477,6 @@
     margin: 0;
     height: 165px;
     text-align: left;
-    margin-left: 20px;
     .color-blue {
       margin-right: -343px;
     }
@@ -2090,7 +2494,7 @@
     height: 400px;
   }
   .header {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .header .header__title{
@@ -2123,7 +2527,7 @@
       display: block;
       color: #fff;
       opacity: 1;
-      font-size: 30px;
+      font-size: 27px;
     }
     &_active {
       left: 0;
@@ -2143,16 +2547,16 @@
       width: 100%;
       padding: 5px 0;
       margin-left: 0;
-      line-height: 45px;
+      line-height: 19px;
       height: auto;
     }
     .footer {
       display: block;
       &__tel {
-        font-size: 16px;
+        font-size: 13px;
       }
       &__city {
-        font-size: 16px;
+        font-size: 15px;
       }
       &__email {
         font-size: 16px;
@@ -2183,19 +2587,26 @@
   .solutions .subheader__note {
     margin-bottom: 15px;
   }
+  .great .subheader__note {
+    margin-bottom: 15px;
+  }
   .values .subheader__note {
     margin-bottom: 15px;
   }
   .solutions .subheader {
     margin-bottom: 40px;
   }
+  .great .subheader {
+    margin-bottom: 40px;
+  }
+  .great .last {
+    margin-bottom: 40px;
+  }
   .solutions .video__wrapper {
     top: 35px;
     position: relative;
   }
-  .solutions .video__img {
-    display: none;
-  }
+
   .solutions .start {
     margin-bottom: -10px;
   }
@@ -2395,7 +2806,7 @@
   .job .cards__item {
     padding: 15px 25px 20px 15px;
     max-width: 315px;
-    height: 380px;
+    //height: 380px;
   }
   .job .cards__note {
     margin-bottom: 10px;
@@ -2411,9 +2822,7 @@
   .job .cards__vacancy {
     font-size: 17px;
   }
-  .job .cards__link {
-    transform: translateY(300%);
-  }
+
   .job .cards__main {
     font-size: 40px;
   }
@@ -2426,7 +2835,8 @@
     margin-bottom: 40px;
   }
   .blogs .media__item {
-    height: 750px;
+    /*height: 750px;*/
+    height: auto;
   }
 }
 @media screen and (max-width: 520px) {
@@ -2443,44 +2853,47 @@
   .contact .forms__field input {
     width: calc(125% - 100px);
   }
-  .study .triangle__list li #text1 {
-    left: 36%;
-  }
-  .study .triangle__list li #text2 {
-    left: 38%;
-  }
-  .study .triangle__list li #text3 {
-    left: 45%;
+  //.study .triangle__list li #text1 {
+  //  left: 36%;
+  //}
+  //.study .triangle__list li #text2 {
+  //  left: 38%;
+  //}
+  //.study .triangle__list li #text3 {
+  //  left: 45%;
+  //
+  //}
+  //.study .triangle__list li #text4 {
+  //  left: 40%;
+  //
+  //}
+  //.study .triangle__list li #text5 {
+  //  left: 36%;
+  //}
+  //
+  //.study .triangle__list li #sub1 {
+  //  left: 34%;
+  //
+  //}
+  //.study .triangle__list li #sub2 {
+  //  left: 35%;
+  //
+  //}
+  //.study .triangle__list li #sub3 {
+  //  left: 35%;
+  //
+  //}
+  //.study .triangle__list li #sub4 {
+  //  left: 35%;
+  //
+  //}
+  //.study .triangle__list li #sub5 {
+  //  left: 34%;
+  //
+  //}
 
-  }
-  .study .triangle__list li #text4 {
-    left: 40%;
 
-  }
-  .study .triangle__list li #text5 {
-    left: 36%;
-  }
 
-  .study .triangle__list li #sub1 {
-    left: 34%;
-
-  }
-  .study .triangle__list li #sub2 {
-    left: 35%;
-
-  }
-  .study .triangle__list li #sub3 {
-    left: 35%;
-
-  }
-  .study .triangle__list li #sub4 {
-    left: 35%;
-
-  }
-  .study .triangle__list li #sub5 {
-    left: 34%;
-
-  }
   //.study .triangle__list li #text2 {
   //  left: 23%;
   //}
@@ -2620,7 +3033,27 @@
   .contact .forms__field input {
     width: calc(133% - 100px);
   }
-  //.study .triangle__list li #text1 {
+  .first__title {
+    line-height: 35px;
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .second__title {
+    line-height: 35px;
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .third__title {
+    line-height: 35px;
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .last__title {
+    line-height: 35px;
+    font-size: 40px;
+    margin-left: 0;
+  }
+  //.study .triangle__list li  {
   //  left: 20%;
   //}
   //.study .triangle__list li #text2 {
@@ -2635,18 +3068,18 @@
   //.study .triangle__list li #text5 {
   //  left: 21%;
   //}
-  .study .triangle__list li #text1 {
-    left: 32%;
-  }
-  .study .triangle__list li #text3 {
-    left: 44%;
-  }
-  .study .triangle__list li #text4 {
-    left: 38%;
-  }
-  .study .triangle__list li #text5 {
-    left: 32%;
-  }
+  //.study .triangle__list li w {
+  //  left: 32%;
+  //}
+  //.study .triangle__list li #text3 {
+  //  left: 44%;
+  //}
+  //.study .triangle__list li #text4 {
+  //  left: 38%;
+  //}
+  //.study .triangle__list li #text5 {
+  //  left: 32%;
+  //}
   .blog .recent__button a svg {
     width: 130px;
   }
@@ -2733,9 +3166,9 @@
   .studies .triangles__logo {
     width: fit-content;
   }
-  .job .header {
-    margin-bottom: -10px;
-  }
+  //.job .header {
+  //  margin-bottom: -10px;
+  //}
   .job .subheader__title {
     font-size: 29px;
     margin-bottom: 30px;
@@ -2762,26 +3195,7 @@
     line-height: 30px;
     font-size: 40px;
   }
-  .first__title {
-    line-height: 35px;
-    font-size: 40px;
-    max-height: 130px;
-  }
-  .second__title {
-    line-height: 35px;
-    font-size: 40px;
-    max-height: 130px;
-  }
-  .third__title {
-    line-height: 35px;
-    font-size: 40px;
-    max-height: 160px;
-  }
-  .last__title {
-    line-height: 35px;
-    font-size: 40px;
-    max-height: 130px;
-  }
+
 
 }
 @media screen and (max-width: 320px) {
@@ -2794,6 +3208,7 @@
   }
 }
 @media screen and (min-width: 576px) {
+
   .third__list {
     li {
       &:hover {
@@ -2812,6 +3227,30 @@
   .header__list {
     .header__logo {
       display: none;
+    }
+  }
+}
+@media screen and (min-width: 1516px) {
+  .job .cards__wrapper {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-height:1000px) and (min-width: 1350px){
+.header{
+  &__title{
+    font-size: 170px;
+    line-height: 72.91%;
+  }
+}
+}
+@media (max-height:730px) and (min-width: 1350px){
+  .header{
+    &__title{
+      font-size: 120px;
+    }
+    &__logo{
+      margin-bottom: 60px;
     }
   }
 }
